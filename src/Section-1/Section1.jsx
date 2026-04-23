@@ -4,7 +4,7 @@ import PageOne from './PageOne'
 
 const Section1 = () => {
   return (
-    <div className='h-screen w-full'>
+    <div className='h-full w-full'>
         <Navbar />
         <PageOne/>
     </div>
