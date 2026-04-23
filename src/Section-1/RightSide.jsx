@@ -1,15 +1,12 @@
 import React from 'react'
 import Card from './card'
 
-const RightSide = () => {
+const RightSide = (props) => {
   return (
-    <div className='bg-amber-300 w-2/3 h-full shrink-0 overflow-hidden flex flex-nowrap'>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+    <div className=' w-2/3 h-full overflow-x-scroll flex flex-nowrap'>
+      {props.users.map(function (elem, idx) {
+        return <Card key={idx} id={idx} img={elem.img} color={elem.color} tag={elem.tag} />
+      })}
     </div>
   )
 }

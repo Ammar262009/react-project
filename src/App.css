@@ -4,3 +4,8 @@ body{
     background-color: black;
     color: red;
 } */
+
+
+::-webkit-scrollbar{
+    display: none;
+}
